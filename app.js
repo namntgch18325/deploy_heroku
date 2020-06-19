@@ -29,6 +29,6 @@ app.use("/",routes);
 // const getErrorPage = require(path.join(__dirname,"/BE/Controller","error"));
 // app.use(getErrorPage);
 
-app.listen(3000, () => {
+app.listen(process.env.PORT || 3000, () => {
   console.log("Server is running ar port 3000");
 });
